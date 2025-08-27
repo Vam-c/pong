@@ -1,0 +1,78 @@
+/*  crt background */
+body {
+  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background-size: 100% 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  /* animation: scanlines infinite 20s linear; */
+}
+
+@keyframes scanlines {
+
+  0%,
+  100% {
+    background-size: 100% 5px;
+  }
+
+  50% {
+    background-size: 100% 6px;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  align-self: center;
+}
+
+.border {
+  align-self: center;
+  height: 80vh;
+  aspect-ratio: 1;
+  border: 2px solid white;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.paddle {
+  width: 10px;
+  height: 80px;
+  background-color: white;
+}
+
+div:has(> #right-paddle) {
+  display: flex;
+  justify-content: end;
+}
+
+.score {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+.separator {
+  border: 0;
+  height: 100%;
+  width: 0;
+  border-left: 3px dashed white;
+  border-right: 3px dashed white;
+}
+
+.ball {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
