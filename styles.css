@@ -67,8 +67,8 @@ div:has(> #right-paddle) {
 
 #ball {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: white;
 }
 
